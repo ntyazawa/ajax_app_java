@@ -25,10 +25,7 @@ public class PostController {
     return "posts/index";
   }
 
-  // @GetMapping("/postForm")
-  // public String showPostForm(@ModelAttribute("postForm") PostForm form){
-  //     return "posts/postForm";
-  // }
+
 
   @PostMapping("/posts")
   public String savePost(@ModelAttribute("postForm") PostForm form){
